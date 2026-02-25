@@ -141,6 +141,7 @@ class FlashHeadPipeline:
         self.wav2vec_feature_extractor = Wav2Vec2FeatureExtractor.from_pretrained(wav2vec_dir, local_files_only=True)
 
     @torch.no_grad()
+    #Update shift to 6.0 from 5.0
     def prepare_params(self,
                         cond_image_path_or_dir,
                         target_size,
@@ -148,7 +149,7 @@ class FlashHeadPipeline:
                         motion_frames_num,
                         sampling_steps,
                         seed=None,
-                        shift=5.0,
+                        shift=6.0,
                         color_correction_strength=0.0,
                         use_face_crop=False,
                         ):
