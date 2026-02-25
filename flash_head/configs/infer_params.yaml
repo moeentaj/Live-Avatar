@@ -4,7 +4,7 @@ tgt_fps: 25
 sample_rate: 16000
 sample_shift: 6
 sample_steps: 4
-color_correction_strength: 1.0
+color_correction_strength: 0.3
 cached_audio_duration: 8
 num_heads: 12
 height: 448
